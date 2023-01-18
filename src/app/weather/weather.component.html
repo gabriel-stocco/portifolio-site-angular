@@ -1,0 +1,78 @@
+<div id="main">
+    <div id="search">
+
+        <div class="d-flex" role="search">
+            <input class="form-control me-2" placeholder="Cidade" [(ngModel)]="cidade" 
+            (keyup.enter)="this.getWeather(cidade, estado)">
+            <button class="btn btn-outline-success" (click)="this.getWeather(cidade, estado)"
+            >Procurar</button>
+        </div>
+        <div id="state">
+            <label for="Estado">Estado</label>
+            <select name="Estado" id="Estado" [(ngModel)]="estado">
+                <option value="acre">AC</option>
+                <option value="alagoas">AL</option>
+                <option value="amapa">AP</option>
+                <option value="amazonas">AM</option>
+                <option value="bahia">BA</option>
+                <option value="ceara">CE</option>
+                <option value="distrito%20federal">DF</option>
+                <option value="espirito%20santo">ES</option>
+                <option value="goias">GO</option>
+                <option value="maranhao">MA</option>
+                <option value="mato%20grosso">MT</option>
+                <option value="mato%20grosso%20do%20sul">MS</option>
+                <option value="minas%20gerais">MG</option>
+                <option value="para">PA</option>
+                <option value="paraiba">PB</option>
+                <option value="parana">PR</option>
+                <option value="pernambuco">PE</option>
+                <option value="piaui">PI</option>
+                <option value="rio%20de%20janeiro">RJ</option>
+                <option value="rio%20grande%20do%20norte">RN</option>
+                <option value="rio%20grande%20do%20sul">RS</option>
+                <option value="rondonia">RO</option>
+                <option value="roraima">RR</option>
+                <option value="santa%20catarina">SC</option>
+                <option value="sao%20paulo">SP</option>
+                <option value="sergipe">SE</option>
+                <option value="tocantins">TO</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="{{tempo.img}}" alt="">
+        <div class="img"></div>
+        <div class="clima_temp">
+            <p>Cidade: {{name}}</p>
+            <p>Clima: {{tempo.description}} </p>
+            <p>Temperatura: {{temperatura.temp}}ºC</p>
+
+        </div>
+    </div>
+
+    <div class="container cont2">
+        <div class="container_dados box">
+            <div class="min_max min_max_img">
+                <img class="img_quente" src="assets/quente-40.png" alt="">
+                <img src="assets/frio-40.png" alt="">
+            </div>
+            <div class="min_max">
+                <p>{{temperatura.temp_max}}ºC</p>
+                <p>{{temperatura.temp_min}}ºC</p>
+            </div>
+        </div>
+
+        <div class="container_dados box">
+            <img src="assets/umidade-60.png" alt="">
+            <p>{{temperatura.humidity}}%</p>
+        </div>
+
+        <div class="container_dados box">
+            <img src="assets/vento-60x60.png" alt="img_vento">
+            <p>{{vento.speed}}Km/h</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+nav {
+    background: linear-gradient(#434343 0%, black 100%);
+    display: flex;
+    border: solid 2px rgb(136, 131, 131);
+    justify-content: space-around;
+    font-size: 16px;
+    font-family: cursive;
+
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.menu ul{
+    display: flex;
+    padding-top: 1em;
+    position: relative;
+    list-style: none;
+    user-select: none;
+}
+
+.menu ul li {
+    margin-inline: 40px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+li :hover {
+    color: rgb(161, 161, 161);
+    text-shadow: white;
+}
+
+

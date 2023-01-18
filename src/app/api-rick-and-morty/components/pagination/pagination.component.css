@@ -1,0 +1,41 @@
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+li {
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 3px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(69, 121, 180);
+    font-size: 25px;
+    user-select: none;
+    list-style:none;
+    background-color: white;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li :hover {
+    background-color: #cfcece;
+    display: block;
+}
+
+.atual {
+    background-color: #cfcece;
+}
+.li2 {
+    width: 120px;
+}
+
+.list {
+    height: 70px;
+    align-items: center;
+}

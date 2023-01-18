@@ -1,0 +1,19 @@
+<div id="main">
+    <h1>Adicione itens na lista!</h1>
+
+    <div>
+        <input class="input_text" type="text" placeholder="Digite uma tarefa" [(ngModel)]="tarefa"
+            (keyup.enter)="add()" />
+        <button (click)="add()">Adicionar</button>
+    </div>
+
+    <ul class="lista">
+        <li (click)="check(i)" *ngFor="let task of listaTarefas; let i=index" class="linha" [ngClass]="{'checked_line' : task.checked}" >
+
+            <div [ngClass]="task.checked ? 'checked_true checkbox' : 'checked_false checkbox' "></div>
+            <div [ngClass]="{'riscado' : task.checked}" class="checkbox_txt" > {{task.tarefa}}</div>
+            <div class="del_button"  (click)="deletar(i, 1)" >X</div>
+
+        </li>
+    </ul>
+</div>

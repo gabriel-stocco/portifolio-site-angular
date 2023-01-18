@@ -1,0 +1,11 @@
+* {
+    user-select: none;
+}
+
+.background {
+    background-image:url(src\assets\background_img.jpg);
+    background-repeat:repeat-y;
+    background-size:contain;
+    background-position: center center;
+}
+

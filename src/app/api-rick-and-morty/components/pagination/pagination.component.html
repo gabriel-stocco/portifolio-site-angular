@@ -1,0 +1,32 @@
+<ul class="list">
+    <li (click)="passPageEmit(-1)">
+        <a>
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+    <li *ngIf="pagNum - 2 > 0" (click)="passPageEmit(-2)">
+        <a>{{ pagNum -2}}</a>
+    </li>
+    <li *ngIf="pagNum - 1 > 0" (click)="passPageEmit(-1)">
+        <a>{{ pagNum -1}}</a>
+    </li>
+    <li class="atual box">
+        <a>{{ pagNum }}</a>
+    </li>
+    <li *ngIf="pagNum + 1 <= 42" (click)="passPageEmit(+1)">
+        <a>{{ pagNum +1}}</a>
+    </li>
+    <li *ngIf="pagNum + 2 <= 42" (click)="passPageEmit(+2)">
+        <a>{{ pagNum +2}}</a>
+    </li>
+    <li (click)="passPageEmit(+1)">
+        <a>
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
+</ul>
+
+<ul class="primi_ulti">
+    <li class="li2" (click)="passPageEmit(0)"><a class="box box2">Primeiro</a></li>
+    <li class="li2" (click)="passPageEmit(42)"><a class="box box2">Último</a></li>
+</ul>

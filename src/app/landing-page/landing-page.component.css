@@ -1,0 +1,103 @@
+h1 {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 100px;
+    font-family: 'Garamond', serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(241, 241, 241);
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: serif;
+    word-wrap: break-word;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image:url(src\assets\background_img.jpg);
+    background-repeat:repeat-y;
+    background-size:contain;
+    background-position: center center;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.img_background {
+    width: 310px;
+    height: 310px;
+    user-select: none;
+    background: rgba(241, 241, 241, 0.63);
+    margin-top: 10px;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.line {
+    background: rgba(241, 241, 241, 0.808);
+    height: 500px;
+    width: 5px;
+    top: 280px;
+    user-select: none;
+}
+
+.txt1 {
+    width: 400px;
+    height: 380px;    
+    padding: 30px;
+    padding-top: 15px;
+    background-color: rgba(241, 241, 241, 0.863);
+    border-radius: 20px;
+    line-height:1.5;
+}
+
+.txt2 {
+    width: 1100px;
+    height: 380px;    
+    padding: 30px;
+    padding-top: 15px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    background-color: rgba(241, 241, 241, 0.863);
+    border-radius: 20px;
+    line-height:1.6;
+}
+
+.sub_title {
+    font-style: italic;
+    font-size: 28px;
+}
+
+.fundo_img {
+    background: white;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    user-select: none;
+
+}
+
+.secundario {
+    height: 2000px;
+}
