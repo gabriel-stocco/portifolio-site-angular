@@ -9,7 +9,6 @@ import { PaginationComponent } from './api-rick-and-morty/components/pagination/
 import { HttpClientModule } from '@angular/common/http';
 import { ApiRickAndMortyComponent } from './api-rick-and-morty/api-rick-and-morty.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { FooterComponent } from './footer/footer.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { FormsModule } from '@angular/forms';
 import { WeatherComponent } from './weather/weather.component';
@@ -26,7 +25,6 @@ import { CrudComponent } from './crud/crud.component';
     PaginationComponent,
     ApiRickAndMortyComponent,
     LandingPageComponent,
-    FooterComponent,
     TodoListComponent,
     WeatherComponent,
     FormComponent,
