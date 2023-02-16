@@ -1,7 +1,7 @@
 <div id="main">
     <h1>Adicione itens na lista!</h1>
 
-    <div>
+    <div class="form">
         <input class="input_text" type="text" placeholder="Digite uma tarefa" [(ngModel)]="tarefa"
             (keyup.enter)="add()" />
         <button (click)="add()">Adicionar</button>

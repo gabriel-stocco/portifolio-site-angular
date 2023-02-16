@@ -3,14 +3,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     user-select: none;
     background-color: #F0F8FF;
-    height: 100%;
+    width: 100%;
 }
 
 h1 {
     margin-bottom: 70px;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .input_text {
     width: 300px;
     border-radius: 15px;
@@ -19,12 +27,12 @@ h1 {
 
 button {
     border-radius: 15px;
+    width: 100px;
 }
 
 .lista {
-    list-style: none;
-    padding-right: 60px;
     margin-top: 10px;
+    padding-left:0;
 }
 
 .riscado {
@@ -34,22 +42,22 @@ button {
 .linha {
     display: flex;
     border: 2px solid black;
-    height: 40px;
     align-items: center ;
     margin-top: 15px;
     padding-left: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: clamp(300px,33vw,600px);
     background-color: rgba(211, 211, 211, 0.726);
 }
 
 .checkbox {
     height: 25px;
-    width: 25px;
+    min-width: 25px;
     border-radius: 10px;
     margin-right: 10px;
     border: 2px solid black;
     cursor: pointer;
+    white-space: normal
 }
 .checked_true {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
@@ -61,19 +69,22 @@ button {
 }
 
 .checkbox_txt {
-    font-size: 20px;
+    font-size: clamp(0.5em, 1em, 1.5em); 
     cursor: pointer;
     font-weight: 700;
+    word-break: break-word;
+    width: clamp(300px,20em,600px);
 }
 
 .del_button {
     justify-items:center;
     font-size: 30px;
     margin-left: auto;
+    padding-left: 40px;
     margin-right: 20px;
     font-weight: bolder;
     color: red;
-    font-family: cursive;
+    font-family: "Arial",cursive;
     cursor: pointer;
 }
 
