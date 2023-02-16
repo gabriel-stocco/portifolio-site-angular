@@ -10,45 +10,44 @@
         <div id="state">
             <label for="Estado">Estado</label>
             <select name="Estado" id="Estado" [(ngModel)]="estado">
-                <option value="acre">AC</option>
-                <option value="alagoas">AL</option>
-                <option value="amapa">AP</option>
-                <option value="amazonas">AM</option>
-                <option value="bahia">BA</option>
-                <option value="ceara">CE</option>
-                <option value="distrito%20federal">DF</option>
-                <option value="espirito%20santo">ES</option>
-                <option value="goias">GO</option>
-                <option value="maranhao">MA</option>
-                <option value="mato%20grosso">MT</option>
-                <option value="mato%20grosso%20do%20sul">MS</option>
-                <option value="minas%20gerais">MG</option>
-                <option value="para">PA</option>
-                <option value="paraiba">PB</option>
-                <option value="parana">PR</option>
-                <option value="pernambuco">PE</option>
-                <option value="piaui">PI</option>
-                <option value="rio%20de%20janeiro">RJ</option>
-                <option value="rio%20grande%20do%20norte">RN</option>
-                <option value="rio%20grande%20do%20sul">RS</option>
-                <option value="rondonia">RO</option>
-                <option value="roraima">RR</option>
-                <option value="santa%20catarina">SC</option>
-                <option value="sao%20paulo">SP</option>
-                <option value="sergipe">SE</option>
-                <option value="tocantins">TO</option>
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="distrito%20federal">Distrito Federal</option>
+                <option value="espirito%20santo">Espírito Santo </option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="mato%20grosso">Mato Grosso</option>
+                <option value="mato%20grosso%20do%20sul">Mato Grosso do Sul</option>
+                <option value="minas%20gerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="rio%20de%20janeiro">Rio de Janeiro</option>
+                <option value="rio%20grande%20do%20norte">Rio Grande do Norte</option>
+                <option value="rio%20grande%20do%20sul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondonia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santa%20catarina">Santa Catarina</option>
+                <option value="sao%20paulo">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
             </select>
         </div>
     </div>
 
     <div class="container">
         <img src="{{tempo.img}}" alt="">
-        <div class="img"></div>
+        
         <div class="clima_temp">
             <p>Cidade: {{name}}</p>
             <p>Clima: {{tempo.description}} </p>
             <p>Temperatura: {{temperatura.temp}}ºC</p>
-
         </div>
     </div>
 
