@@ -29,6 +29,11 @@ label {
     font-size: clamp(1rem, 3vw, 1.5rem); 
 }
 
+.projetos:hover {
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+
 ul{
     display: flex;
     padding-top: 1em;
@@ -76,12 +81,11 @@ input:checked ~ label{
 
 #check {
     color: rgb(161, 161, 161);
+}
+input {
     display: none;
 }
 
-#radio-inicio, #radio-todo, #radio-rick, #radio-clima, #radio-crud {
-    display: none;
-}
 @media screen and (max-width: 1158px) {
 
     .title {
@@ -109,7 +113,6 @@ input:checked ~ label{
     }
 
     ul li {
-        
         margin: 50px 0;
         line-height: 30px;
     }

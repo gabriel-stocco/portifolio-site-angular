@@ -3,7 +3,7 @@
 
     <label class="title" routerLink="/" for="radio-inicio">Portfólio Gabriel S.</label>
     
-    <input type="checkbox" id="check">
+    <input type="radio" id="check" name="radio">
     <label for="check" class="menu">
         <svg  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3z" /></svg>
     </label>
@@ -11,20 +11,20 @@
     <ul>
         <label class="projetos">Projetos =></label>
 
-        <li><input type="radio" id="radio-inicio" name="radio">
-            <label routerLink="/" for="radio-inicio" for="check">Início</label></li>
+        <li>
+            <label routerLink="/"><input type="radio" id="radio-inicio" name="radio" >Início</label></li>
 
         <li><input type="radio" id="radio-todo" name="radio">
-            <label routerLink="/toDo-list" for="radio-todo" for="check">ToDO List</label></li>
+            <label routerLink="/toDo-list" for="radio-todo" >ToDO List</label></li>
 
         <li><input type="radio" id="radio-rick" name="radio">
-            <label routerLink="/api-rick&morty" for="radio-rick" for="check">Api Rick and Morty</label></li>    
+            <label routerLink="/api-rick&morty" for="radio-rick" >Api Rick and Morty</label></li>    
 
         <li><input type="radio" id="radio-clima" name="radio">
-            <label routerLink="/clima-atual" for="radio-clima" for="check">Clima Atual</label></li>
+            <label routerLink="/clima-atual" for="radio-clima" >Clima Atual</label></li>
 
         <li><input type="radio" id="radio-crud" name="radio">
-                <label routerLink="/crud" for="radio-crud" for="check">CRUD</label></li>
+            <label routerLink="/crud" for="radio-crud" >CRUD</label></li>
 
     </ul>
 

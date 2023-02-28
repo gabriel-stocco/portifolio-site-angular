@@ -39,10 +39,7 @@ export class CrudComponent implements OnInit {
   }
 
   delUsuario(id: number) {
-    this.apiServiceService.delPlanilhaService(id)
-    setTimeout(() => {
-      location.reload()
-    }, 500); 
+    /*this.apiServiceService.delPlanilhaService(id)*/
     
   }
 }

@@ -4,6 +4,7 @@ import { ApiRickAndMortyComponent } from './api-rick-and-morty/api-rick-and-mort
 import { CrudComponent } from './crud/crud.component';
 import { FormComponent } from './crud/form/form.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoadingComponent } from './loading/loading.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { WeatherComponent } from './weather/weather.component';
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: "toDo-list", component: TodoListComponent},
   {path: "clima-atual", component: WeatherComponent},
   {path: "crud", component: CrudComponent},
-  {path: "crud/formulário",  component: FormComponent}
+  {path: "crud/formulário",  component: FormComponent},
+  {path: "loading",  component: LoadingComponent}
 ];
 
 @NgModule({

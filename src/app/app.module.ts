@@ -15,6 +15,7 @@ import { WeatherComponent } from './weather/weather.component';
 import { FormComponent } from './crud/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CrudComponent } from './crud/crud.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { CrudComponent } from './crud/crud.component';
     WeatherComponent,
     FormComponent,
     CrudComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
