@@ -7,10 +7,11 @@
     padding-top: 60px;
     display: flex;
     flex-direction: column;
+    align-content: center;
     font-family: sans-serif;
     color: #59429d;
     background-color: #F0F8FF;
-    height: 635px;
+    height: 100vh;
 }
 
 #titulo, #subtitulo {
@@ -26,28 +27,29 @@ input {
 input :focus {
     background: #E0E0F8
 }
+
 .grupo {
     display: flex;
-    margin-left: 30%;
-    height: 50px;
     margin-top: 50px;
     font-weight: 600;
-
+    align-items: center;
 }
 
-.form {
-    justify-content: center;
+form {
+    align-self: center;
 }
 
 .dado {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+}
+
+.sobrenome, .e-mail {
+    margin-left: 30px;
 }
 
 .button {
-    position: absolute;
-    left: 640px;
+    margin-left: 26.2vh;
     font-family: sans-serif;
     background-color: rgb(72, 37, 107);
     border-radius: 5px;
@@ -64,4 +66,27 @@ input :focus {
     background: #867ca7;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
+}
+
+@media screen and (max-width:685px){
+
+    form {
+    padding-top: 30px;
+    }
+    .grupo {
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .dado {
+        margin: 0;
+        margin-top: 15px;
+        width: 200px;
+    }
+
+    .button {
+        margin-top: 30px;
+        margin-left: 8vh;
+    }
 }

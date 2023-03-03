@@ -1,14 +1,14 @@
 <div id="main">
     <h1 id="titulo">Cadastro de usuário</h1>
     <p id="subtitulo">Preencha as informações</p>
-    <form class="form" [formGroup]="formulario">
+    <form [formGroup]="formulario">
 
         <fieldset class="grupo">
             <div class="dado">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" formControlName="nome" required>
             </div>
-            <div class="dado">
+            <div class="dado sobrenome">
                 <label for="sobrenome">Sobrenome</label>
                 <input type="text" name="sobrenome" formControlName="sobrenome" required>
             </div>
@@ -27,7 +27,7 @@
                 <input type="text" name="profissao" formControlName="profissao" required>
             </div> 
 
-            <div class="dado">
+            <div class="dado e-mail">
                 <label for="email">E-mail</label>
                 <input type="text" name="email" formControlName="email" required>
             </div>

@@ -39,7 +39,7 @@ export class CrudComponent implements OnInit {
   }
 
   delUsuario(id: number) {
-    /*this.apiServiceService.delPlanilhaService(id)*/
+    this.apiServiceService.delPlanilhaService(id)
     
   }
 }
